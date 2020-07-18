@@ -1,0 +1,64 @@
+<!-- ex07_card.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CDN방식 [Content Delivery Network]으로 라이브러리를  -->
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Basic Card</h1>
+        <div class="card">
+            <div class="card-body">
+                Carc-Body
+            </div>
+        </div>
+        <div class="row m-5"><!-- m-5는 상하좌우 전부 5씩 들어가는 것 -->
+            <div class="col-md-4">
+                
+                <div class="card">
+                    <div class="card-header">Header</div>
+                    <div class="card-body">Body</div>
+                    <div class="card-footer">Footer</div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/main1_11.png" class="card-img-top img-thumdnail"><!-- 이미지가 top에 들어간다는 말 -->
+                    <div class="card-body">
+                        <h4 class="card-title">아름다운봅</h4>
+                        <p class="card-text">봄봄봄..봄이왔음</p>
+                        <a href="#" class="btn btn-outline-danger">Show Info</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" style="height:300px">
+                    <img src="images/main1_12.png" class="card-img-top img-thumdnail" style="height:450px">
+                    <div class="card-img-overlay">
+                        <h4 class="card-title">아앆!!</h4>
+                        <p class="card-text">여름이다!!</p>
+                        <a href="#" class="btn btn-outline-danger">Show Info</a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+</html>

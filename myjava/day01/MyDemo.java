@@ -1,0 +1,36 @@
+import java.lang.System;
+
+public class MyDemo
+{
+	public static void main(String[] args)
+	{
+		System.out.println("저는 \"31\"살입니다.");
+		System.out.print("공부하러");
+		System.out.println("come");
+		System.out.println("국어\t영어\t수학");
+		System.out.println("------------------------");
+		System.out.println(" 99\t 88\t  77");
+
+		System.out.println("Hello World~\rA");
+		System.out.println("\'나는\' |날|고|있|다");
+	
+
+		//" '역슬래시(\)'를 출력할 때는 제어문자를 씁니다"
+
+
+
+		/*제어문자(escape문자): 인쇄할 수 없거나
+			키보드로 표현할 수 없는 특별한 문자를 가리킨다.
+			\n: 줄바꿈
+			\t: 수평탭
+			\r: 캐리지 리턴. 스크린 커서를 현재줄의 처음으로 옮긴다.
+			\\: 역슬래시 문자를 출력할 때 사용
+			\": 큰따옴표를 출력시 사용
+			\': 작은따옴표를 출력시 사용
+			엔터값: /r/n
+			
+			*/
+	}
+
+
+}

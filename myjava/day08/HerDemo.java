@@ -1,0 +1,5 @@
+class HerDemo 
+{
+		 String str="HerDemo's str";
+	static String info="HerDemo's info";
+}

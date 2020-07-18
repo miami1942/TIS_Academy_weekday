@@ -1,0 +1,91 @@
+<!-- ex05color_font.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CDN방식 [Content Delivery Network]으로 라이브러리를  -->
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <h1>Background</h1>
+        <p class="bg-primary text-white">.bg-primary</p>
+        <p class="bg-success text-white">.bg-success</p>
+        <p class="bg-warning text-white">.bg-warning</p>
+        <p class="bg-danger text-white">.bg-danger</p>
+        <p class="bg-info text-white">.bg-info</p>
+        <p class="bg-secondary text-white">.bg-secondary</p>
+        <p class="bg-dark text-white">.bg-dark</p>
+        <p class="bg-light text-dark">.bg-light</p>
+
+        <hr>
+        <h1>Button Color</h1>
+        <button class="btn btn-default">Default</button>
+        <button class="btn btn-primary">Primary</button>
+        <button class="btn btn-success">Success</button>
+        <button class="btn btn-warning">Warning</button>
+        <button class="btn btn-danger">Danger</button>
+        <button class="btn btn-info">Info</button>
+        <button class="btn btn-secondary">Secondary</button>
+        <button class="btn btn-dark">Dark</button>
+        <button class="btn btn-light">Light</button>
+        <button class="btn btn-link">Link</button>
+
+        <h1>a태그를 버튼처럼 활용 가능</h1>
+        <a href="http://www.google.com">단순링크</a>
+        <a href="http://www.google.ocm" role="button" class="btn btn-info">버튼링크</a>
+        <!-- a태그를 버튼처럼 사용하려면 role='botton'을 주고 class="btn btn-info등으로 적용" -->
+
+        <h1>Button Size</h1>
+        <button class="btn btn-outline-primary btn-lg">Large</button>
+        <!-- btn-outline-primary : 버튼 테두리가 해당 색으로 되면서 마우스오버시 색 변경 -->
+        <button class="btn btn-outline-success btn-md">Medium</button>
+        <button class="btn btn-outline-danger btn-sm">Small</button>
+
+        <h1>Block Level Button</h1>
+        <button class="btn btn-danger btn-block">Bluck Level Button.btn-block</button>
+
+        <h1>Spinner Button</h1>
+        <button class="btn btn-dark">
+            <span class="spinner-border spinner-border-sm">
+                <!--로딩같은걸 포함 할때 스핀 ~ -->
+            Loding...
+            </span>
+            Loding...
+        </button>
+        <button class="btn btn-info">
+            <span class="spinner-grow spinner-grow-sm">
+            Loding...
+            </span>
+            Loding...
+        </button>
+        
+        <h1>Active/Disable</h1>
+        <button class="btn btn-primary active">Active Button</button>
+        <!-- active : 활성화된 버튼 -->
+        <button class="btn btn-primary" disabled>Disabled Button</button>
+        <!-- 비활성화된 버튼은 속성을 주는것임  ""안에 들어가지 않음 -->
+        <a href="#" class="btn btn-primary disabled">Disabled Link</a>
+
+        <hr>
+        <p class="font-weight-bold text-left">Bold Text</p> 
+        <p class="font-weight-normal text-center">Normal Text</p> 
+        <p class="font-weight-light text-right">Light Text</p> 
+        <p class="font-italic">Italic Text</p>
+    </div>   
+    
+</body>
+</html>

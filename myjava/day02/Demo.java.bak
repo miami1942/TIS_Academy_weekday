@@ -1,0 +1,28 @@
+public class Demo
+{
+	public static void main(String[] args)
+	{
+		System.out.println("Hello World");
+
+/*
+1.기본자료형
+	1) 정수형
+		byte  (1byte=> 8bit)  -2^7 ~ 2^7-1
+		short (2byte=> 16bit) -2^15 ~ 2^15-1
+		int   (4byte=> 32bit) -2^31 ~ 2^31-1
+		long  (8byte=> 64bit) -2^63 ~ 2^63-1
+	2) 실수형
+		float (4byte):소수점 이하 7~8자리
+		double (8byte):소수점 이하 15~16자리
+	3) 문자형 ex) 'A'
+		char (2byte) 0 ~ 2^16-1
+	4) 논리형 true, false
+		boolean 
+
+2. 참조형
+	Date
+	String "ABC
+*/
+	}
+
+}

@@ -1,0 +1,82 @@
+public class Primitive2
+{
+	public static void main(String[] args)
+	{
+		System.out.println("2. 실수형-----");
+		/*
+		float (4byte) : 단정밀도. 소수점 이하 7자리
+		 -> 부동소수점일 경우 접미사 F,f를 붙여준다.
+			그렇지 않으면 double로 인식한다.
+		double (8byte) : 배정밀도. 소수점 이하 15~16자리(디폴트)
+		*/
+		float a=1.234f;
+		System.out.println("a="+a);
+		float b=200;
+		System.out.println("b="+b);
+		//작은유형의 값이 큰유형의 변수에 담기면 자동변환이 일어난다.
+		// => promotion (묵시적 형변환)
+		float c=.7789f;
+		System.out.println("c="+c);
+
+		//double (8byte)
+		double d=889.4789;
+		System.out.println("d="+d);
+		
+		//과학적 지수 표기방법 : E (과학적지수)
+		double x=123e-3;	//e-3이란 123 * 10^-3
+		System.out.println("x="+x);
+
+		double y=123e3;		//123 * 10^3
+		System.out.println("y="+y);
+
+		float f=3e2f;
+		System.out.println("f="+f);
+
+		float q=0345;
+		System.out.println("q="+q);
+
+		System.out.println("3. 문자형-----");
+		//char : 2byte 0 ~ 2^16-1(65535);
+		//		모든 국가의 언어 표현가능. 유니코드 체계를 사용함
+		char ch='W';
+		char ch2='가';
+		char ch3='家';
+		System.out.println("ch="+ch);
+		System.out.println("ch2="+ch2);
+		System.out.println("ch3="+ch3);
+
+		char ch4='\uff57'; //유니코드(다른나라 언어)
+							//↑자격증시험에 나옴
+		System.out.println("ch4="+ch4);
+		char ch5=' ';//공백을 넣으려면 space bar 라도 넣어야함.
+						//아예 '' 이렇게만 해버리면 오류남
+		System.out.println("ch5="+ch5);
+		//char ch6='AB'; [X]  <- char는 한글자만 되는가봄
+		char c1='A'; //65 (아스키코드)
+		char c2='B'; //66 
+		System.out.println(c1 + c2); //이건 ""없어도 되는가봄
+		System.out.println(""+c1 + c2); //AB 라는 문자로
+										//나오게 하고싶을때
+										//""+붙이고
+		/*
+		int형 이하의 자료유형(byte,short,char)이 연산에
+		사용되면 자동으로 int형으로 promotion(자동형변환)이 일어난다.
+		*/
+
+		byte b1=1;
+		byte b2=2;
+		int b3=b1+b2;
+		System.out.println("b3="+b3);
+
+		System.out.println("4. 논리형----");
+		//boolean (1byte) : true, false값을 갖는다.
+		// 자바의 논리형은 0이나 1로 호환되지 않는다. 형변환도 불가능한다.
+		boolean bool=true;
+		//boolean bool2=1; [x]
+		boolean bool3=2>3;
+		System.out.println("bool="+bool);
+		System.out.println("bool3="+bool3);
+
+	}
+
+}

@@ -1,0 +1,76 @@
+class DoWhileTest
+{
+	public static void main(String[] args) 
+	{
+		/*
+			변수선언문;
+			do{
+				반복 실행할 문장;
+				증감식;
+			}while(조건식);
+
+			while 문의 경우 조건이 true면 반복실행하지만,
+			do~while문의 경우는 조건이 false일지라도
+			한 번은 실행을 하고 반복문을 벗어난다.
+		*/
+		int a=5;
+		do
+		{
+			System.out.println("Hello: "+a);
+			a+=3;
+		}
+		while (a<20);
+
+		int b=5;
+		do
+		{
+			System.out.println("Java: "+b);
+			b+=3;
+		}
+		while (b<0);
+
+		/*[문제1] do~while루프를 이용해 1~100까지의 수중
+		3의 배수이면서 3의 배수인 값들을 출력하세요
+		
+		  [문제2] 1~30까지의 수중 5단위마다 "땅콩", 
+				 10단위 마다는 "찐콩"을 출력하세요.
+				 1,2,3,4 -땅콩 6,7,8,9 -찐콩...
+		*/
+
+		int i=12;
+		do
+		{
+			System.out.println("3의배수이면서 4의배수: "+i);
+			i+=12;
+		}
+		while (i<=100);
+
+		int kong=1;
+		do
+		{
+			/*if (kong%10==0)
+				System.out.print("찐콩\n");
+			else if (kong%5==0)
+				System.out.print("깐콩, ");
+			else
+				System.out.print(kong+", ");*/
+		if(kong%5==0){
+			if(kong%10==0){
+				System.out.print("찐콩,");
+			}else{
+				System.out.print("땅콩, ");
+			}
+			}else{
+				System.out.print(kong+",");
+			}
+			kong+=1;
+			
+		}
+
+		while (kong<=30);
+
+		
+		
+		
+	}
+}

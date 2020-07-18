@@ -1,0 +1,82 @@
+<!-- ex04_layout.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CDN방식 [Content Delivery Network]으로 라이브러리를  -->
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<style>
+    ul.nav{
+        display:block;
+        background-color: rgba(173, 120, 216, 0.5);
+        padding:10px;
+        border-radius:5px;
+    }
+    footer{
+        text-align:center;
+        font-family: sans-serif;
+        font-size: 0.8em;
+        height: 45px;
+        background-color: rgba(200, 200, 200, 0.5);
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <header class="jumbotron">
+            <h1 class="text-primary text-center">My Home</h1>
+            <p class="mt-5 text-center">그리드를 중첩하여 레이아웃을 구성해봅시다.</p>
+        </header>
+        <!-- contents 들어가는 부분 -->
+        <div class="row">
+            <div class="col-md-3 d-none d-sm-block">
+                <ul class="nav">
+                    <li>menu1</li>
+                    <li>menu2</li>
+                    <li>menu3</li>
+                    <li>menu4</li>
+                </ul>
+            </div>
+            <div class="col-md-9">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-7"><p>
+                            추미애 법무부장관은 지난 29일 국회 법제사법위원회 전체회의에서 윤석열 검찰총장이 MBC가 보도한 ‘검·언 유착 의혹’ 사건을 대검 전문수사자문단(자문단)에 회부키로 한 것을 두고 “아주 나쁜 선례가 될 수 있다”고 했다. 앞서 윤 총장은 ‘채널A 기자의 강요 미수 혐의 적용이 어렵다’는 대검 내부 다수 의견에 따라 지난 19일 자문단을 통해 검토하라고 했었다. 이에 대해 추 장관은 “이 사건은 채널A 기자의 언행이 협박에 해당하느냐는 단순한 문제”라며 “외부 전문가에게 자문할 필요가 없는 것으로 이해한다”고도 했다. 이성윤 서울중앙지검장도 추 장관 발언 바로 다음 날 자문단에 대한 ‘절차 중단’을 요구하면서 윤 총장에게 공개적으로 반기(反旗)를 들고 있다.
+</p>
+                        </div>
+                        <div class="col-md-5">
+                            <p>추미애 법무부장관은 지난 29일 국회 법제사법위원회 전체회의에서 윤석열 검찰총장이 MBC가 보도한 ‘검·언 유착 의혹’ 사건을 대검 전문수사자문단(자문단)에 회부키로 한 것을 두고 “아주 나쁜 선례가 될 수 있다”고 했다. 앞서 윤 총장은 ‘채널A 기자의 강요 미수 혐의 적용이 어렵다’는 대검 내부 다수 의견에 따라 지난 19일 자문단을 통해 검토하라고 했었다. 이에 대해 추 장관은 “이 사건은 채널A 기자의 언행이 협박에 해당하느냐는 단순한 문제”라며 “외부 전문가에게 자문할 필요가 없는 것으로 이해한다”고도 했다. 이성윤 서울중앙지검장도 추 장관 발언 바로 다음 날 자문단에 대한 ‘절차 중단’을 요구하면서 윤 총장에게 공개적으로 반기(反旗)를 들고 있다.
+
+                                </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- .row end -->
+        <footer class="p-3"><!-- p-3 : paddig 3이라는 말 -->
+            
+            여기는 푸터가 들어가는 곳
+        </footer>
+    </div><!-- .container end -->
+</body>
+</html>
+
+
+
+
+
+
+
+

@@ -1,0 +1,65 @@
+import java.util.Scanner;
+
+class IfTest2 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("국어 점수 입력=>");
+		int kor=sc.nextInt();
+		System.out.println("영어 점수 입력=>");
+		int eng=sc.nextInt();
+		System.out.println("수학 점수 입력=>");
+		int meth=sc.nextInt();
+		int c=kor+eng+meth;
+		int d=c/3;
+		
+		//double d=c/3.0; <='3.0'을 실수가 아닌 정수로 입력했을 때는 나눈 값이 소수점까지 나오진않음.
+		  //↑ int 나누기 int 는 int라서 값이 int(정수)로 나옴
+
+		System.out.println("국어: " + kor);
+		System.out.println("영어: " + eng);
+		System.out.println("수학: " + meth);
+		System.out.println("합계 점수는 = "+ c);
+		System.out.println("평균 점수는 = "+ d);
+//학점
+  char hak=' ';
+if(d>=90){
+	hak='A';
+}else if(d>=80){
+	hak='B';
+}else if (d>=70)
+{
+	hak='C';
+}else if (d>=60)
+{
+	hak='D';
+}else
+	hak='F';
+
+		//if 조건문이 여러개일때 위에서부터 조건이 충족되면 밑에꺼는 안봄
+
+		if (d>=95 && d<=100)
+			System.out.println("A+");
+		else if ((90<=d) && (d<95))
+			System.out.println("A");
+		else if ((85<=d) && (d<90))
+			System.out.println("B+");
+		else if ((80<=d) && (d<85))
+			System.out.println("B");
+		else if ((75<=d) && (d<80))
+			System.out.println("C+");
+		else if ((70<=d) && (d<75))
+			System.out.println("C");
+		else if ((65<=d) && (d<70))
+			System.out.println("D+");
+		else if ((60<=d) && (d<65))
+			System.out.println("D");
+		else if ((0<=d) && (d<60))
+			System.out.println("F");
+		else
+			System.out.println("입력오류!! 점수는 0~100점 사이어야 해요");
+
+
+	}
+}

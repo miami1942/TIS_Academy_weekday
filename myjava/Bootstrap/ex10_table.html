@@ -1,0 +1,135 @@
+<!-- ex08_table.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<!-- CDN방식 [Content Delivery Network]으로 라이브러리를 참조해보자. -->
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <h1>Dark Table : [.table table-dark table-striped table-hover]</h1>
+        <table class="table table-dark table-striped table-hover">
+            <tr>
+                <th>FirstName</th>
+                <th>LastName</th>
+                <th>Email</th>
+            </tr>
+            <tr>
+                <td>Smith</td>
+                <td>Doe</td>
+                <td>smith@a.b.c</td>
+            </tr>
+            <tr>
+                <td>Scott</td>
+                <td>King</td>
+                <td>scott@a.b.c</td>
+            </tr>
+            <tr>
+                <td>James</td>
+                <td>Doe</td>
+                <td>smith@a.b.c</td>
+            </tr>
+            <tr>
+                <td>Ward</td>
+                <td>Kim</td>
+                <td>ward@a.b.c</td>
+            </tr>
+        </table>
+
+        <h1>Small Table : [.table table-sm table-hover .thead-dark/.thead-light]</h1>
+        <table class="table table-sm table-hover">
+            <thead class="thead-dark">
+                <tr>
+                    <th>FirstName</th>
+                    <th>LastName</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Smith</td>
+                <td>Doe</td>
+                <td>smith@a.b.c</td>
+            </tr>
+            <tr>
+                <td>Scott</td>
+                <td>King</td>
+                <td>scott@a.b.c</td>
+            </tr>
+            <tr>
+                <td>James</td>
+                <td>Doe</td>
+                <td>smith@a.b.c</td>
+            </tr>
+            <tr>
+                <td>Ward</td>
+                <td>Kim</td>
+                <td>ward@a.b.c</td>
+            </tr>
+            </tbody>
+        </table>
+
+        <h1>Responsive Table : [.table table-responsive]</h1>
+        <p>반응형 테이블로 만들고자 할 때 사용하는데,
+            768px이하의 작은 디바이스일 때 수평 스크롤이 생긴다.
+            768px이상일 때는 차이가 없다.
+            table을 감싸는 div를 만들고 해당 div에 .table-responsive를 준다.
+        </p>
+        <div class="table-responsive">
+        <table class="table table-sm table-hover">
+            <tr class="table-primary">
+                <th>FirstName</th>
+                <th>LastName</th>
+                <th>Email</th>
+                <th>FirstName</th>
+                <th>LastName</th>
+                <th>Email</th>
+            </tr>
+            <tr class="table-warning">
+                <td>Smith</td>
+                <td>Doe</td>
+                <td>smith@a.b.c</td>
+                <td>Smith</td>
+                <td>Doe</td>
+                <td>smith@a.b.c</td>
+            </tr>
+            <tr class="table-success">
+                <td>Scott</td>
+                <td>King</td>
+                <td>scott@a.b.c</td>
+                <td>Smith</td>
+                <td>Doe</td>
+                <td>smith@a.b.c</td>
+            </tr>
+            <tr class="table-danger">
+                <td>James</td>
+                <td>Doe</td>
+                <td>smith@a.b.c</td>
+                <td>Smith</td>
+                <td>Doe</td>
+                <td>smith@a.b.c</td>
+            </tr>
+            <tr>
+                <td>Ward</td>
+                <td>Kim</td>
+                <td>ward@a.b.c</td>
+                <td>Smith</td>
+                <td>Doe</td>
+                <td>smith@a.b.c</td>
+            </tr>
+        </table>
+       </div><!-- .table-responsive -->
+    </div><!-- .container -->
+</body>
+</html>

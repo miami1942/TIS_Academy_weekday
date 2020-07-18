@@ -1,0 +1,53 @@
+import java.util.Scanner;
+
+class IfTest 
+{
+	public static void main(String[] args) 
+	{
+		System.out.println("정수를 입력하세요=>");
+		Scanner sc=new Scanner(System.in);
+		int num=sc.nextInt();
+/*		if(num>0)
+		{
+			System.out.println("양수입니다");
+		}
+			System.out.println("꺼져~");//<- 조건의 상관없이 나오는 것.
+			*/
+			/*
+			if(조건식){
+				실행문1;
+			}else{
+				실행문2;
+			}
+			[실습 if~else문 이용해서 입력받은 값 num이 짝수이면
+			"짝수입니다", 홀수면 "홀수입니다"를 출력하세요]
+			*/
+
+if (num%2==0)
+	System.out.println("짝수입니다");
+else
+	System.out.println("홀수입니다");
+
+if (num%2==0)
+	System.out.println(num + "짝수입니다");
+else
+	System.out.println(num + "홀수입니다");
+System.out.println("세번째");
+if (num%2==0)
+	System.out.println("" + num + "짝수입니다");
+else
+	System.out.println("" + num + "홀수입니다");
+
+
+System.out.println("↓삼항연산자");
+String fgh=(num%2==0)? num+"은(는) 짝수":num+"은(는) 홀수";
+		System.out.println(fgh);
+
+System.out.println("한줄로 표현하기");
+System.out.println((num%2==0)? num+"is Even":num+"is Odd");
+
+		// 변수선언문=(조건식)? 값1:값2;
+
+
+	}
+}

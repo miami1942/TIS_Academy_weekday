@@ -1,0 +1,58 @@
+import java.io.IOException;
+class Test3 
+{
+	public static void main(String[] args) 
+		throws IOException
+	{
+		/*char ch='A';
+		char lowerCase = (대문자여부를 판별하는 조건   )?  :  ch;
+		System.out.println("ch: "+ch);
+		System.out.println("ch to lowerCase: "+lowerCase);*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		System.out.println("알파벳을 입력하세요=>");
+		char ch=(char)System.in.read();
+		char lowerCase = (ch>='A'&&ch<='Z')? (char)(ch+32) :  ch;
+		System.out.println("ch: "+ch);
+		System.out.println("ch to lowerCase: "+lowerCase);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	}
+}

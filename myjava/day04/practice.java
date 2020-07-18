@@ -1,0 +1,41 @@
+class practice 
+{
+	public static void main(String[] args) 
+	{
+		int x=2;//int x=2, y=5로 해여됨
+		int y=5;
+		char c='A'; //'A' 문자코드=65
+	// 10000000 00000000 00000000 00000001
+		System.out.println(1+x<<33);
+		//쉬프트 연산같은데<=리터럴 밑에 값에 포함안됨
+		System.out.println(y >= 5 || x < 0 && x > 2);//&&가 ||보다 먼저 한다.
+		System.out.println(y += 10 - x++);
+		//13  <=++이나, --는 리터럴이고 나발이고 대입하고 다음 항에 적용됨
+		System.out.println(x+=2);//5
+		System.out.println(!('A' <= c && c <= 'Z'));
+		//false
+		System.out.println('C'-c);//2   char-char = int!!
+		System.out.println('5'-'0');//5
+		System.out.println(c+1);//66   char+int=int
+		System.out.println(++c);//66 ++은 
+		System.out.println(c++);//66
+		System.out.println(c);//67
+
+		int a=123; //사과의 개수
+		int b=10;
+		//바구니의 크기(바구니에 담을 수 있는 사과의 개수)
+		int d=a/b;if (a%b>0)
+			System.out.println(d+=1);
+
+		
+		/*System.out.println("필요한 바구니의 수는 " + d + "입니다.");
+
+		int num=456;
+		int mum=num%100;
+		System.out.println(num-mum);
+
+		int gum=333;
+		System.out.println()*/
+		
+	}
+}

@@ -1,0 +1,90 @@
+class MyOperator2 
+{
+	public static void main(String[] args) 
+	{
+		System.out.println("3. 비교 연산자(>, >=, <, <=, ==, !=)");
+		/*
+		1) > : 큰가?
+		2) >=: 크거나 같은가?
+		3) < : 작은가?
+		4) <=: 작거나 같은가?
+		5) ==: 같은가?
+		6) !=: 다른가?
+		*/
+		int a=10;
+		float b=20.0f;
+		System.out.println(a<b);
+		System.out.println(a<=b);
+		System.out.println(a==b);
+		/* 등가 연산자(==)는
+		   기본 자료형에서 사용되면 값이 같은지를 물어 같으면 true, 다르면 false
+		   참조 유형에서 사용되면 가리키는 주소값이 같은지를 묻는다.
+		*/
+		String s1=new String("Hello");
+		String s2=new String("Hello");
+		String s3=s1;
+		System.out.println("s1==s2: "+(s1==s2));
+		System.out.println("s1==s3: "+(s1==s3));
+
+		System.out.println("4. 비트 연산자----");
+		/* 비트로 바꾸어 연산을한다.
+			1) & (And연산) : 두 비트가 1일 경우만 1. 나머지는 0
+			2) | (Or연산)  : 두 비트 중 1개라도 1이면 1.
+			3) ^ (Xor연산) : 두 비트가 서로 다르면 1, 같으면 0
+			------------------------------
+			x   y	 &		|	 ^
+			------------------------------
+			1	1	 1		1	 0
+			1	0	 0		1	 1
+			0	1	 0		1	 1
+			0	0	 0		0	 0
+		
+		*/
+		int m=3;
+		int n=5;
+		System.out.println("m&n="+(m&n)); // 0001 = 1
+		System.out.println("m|n="+(m|n)); // 0111 = 7
+		System.out.println("m^n="+(m^n)); // 0110 = 6
+
+		System.out.println("5. 논리 연산자(&, |, &&, ||)--");
+		/*
+		1) & : 피 연산자가 둘다 true일 경우만 true
+		2) | : 피 연산자 중 하나라도 true면 true
+
+		3) &&: 앞의 연산으로 결과를 알 수 있을 경우, 뒤의 연산은 수행하지 않음.
+			   즉 앞의 연산결과가 false이면 뒤의 연산을 생략한다.
+		4) ||: 역시 앞의 연산결과를 알 경우 뒤의 연산을 우행하지 않음.
+			   앞의 연산 결과가 true이면 뒤의 연산을 생략함
+		*/
+		int x=1;
+		int y=x++; //y=1, x=2
+		if((x>0) & (y==1))
+			System.out.println("Hello");
+		else
+			System.out.println("Java");
+
+
+		//[문제1] 아래 예제의 결과를 예상하세요
+		int i=1;
+		int j=i++;
+		if ((i>++j) && (i++ ==j));
+		   //2 > 2      
+		   //false
+
+		System.out.println("i="+i); // false
+
+		//[문제2]
+		int mm=0;
+		int nn=1;
+		if ((mm++ ==0)|(nn++ ==2))
+			mm=42;
+		System.out.println("mm="+mm + ", nn="+nn);
+
+		//[문제3]
+		boolean r=false;
+		boolean e=true;
+		boolean w=((r=true)||(e=false));
+		System.out.println(r + ", " + e + ", " + w);
+
+	}
+}

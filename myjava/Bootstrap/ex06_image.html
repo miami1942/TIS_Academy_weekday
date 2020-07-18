@@ -1,0 +1,51 @@
+<!-- ex06_image.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CDN방식 [Content Delivery Network]으로 라이브러리를  -->
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <img src="images/main1_3.png">
+        <img src="images/main1_4.png" class="rounded">
+        <!-- .rounded : 모서리를 둥글게 -->
+        <img src="images/main1_5.png" class="rounded-circle">
+        <!-- .rounded-circle : 둥글게 -->
+        <img src="images/main1_6.png" class="img-thumbnail">
+        <!-- .img-thumbnail : 흰테두리같은 썸네일-->
+
+        <hr class="m-3">
+        <img src="images/main1_7.png" class="float-left">
+        <img src="images/main1_8.png" class="float-right">
+        
+        <div style="clear: both;"></div>
+        <hr class="m-3">
+        <h1>Center Image</h1>
+        <img src="images/main1_9.png" class="mx-auto d-block">
+        <!-- .mx-auto (margin:auti):마진을 오토로 주겠다는말이지 -->
+        <!-- .d-block (display:block)  큰이미지는 가려짐-->
+        
+
+        <hr class="m-3">
+        <h1>Responsive Image</h1>
+        <img src="images/main1_10.png" class="img-fluid">
+        <!-- 클래스가 없는 상태에서는 큰그림의 경우 짤림(크기가 자동으로 작아지는게 아니다 이말이야) -->
+        <!-- .img-fluid를 주면 max-width:100%이고 height:auto가 적용된다. -->
+    </div>
+    
+</body>
+</html>

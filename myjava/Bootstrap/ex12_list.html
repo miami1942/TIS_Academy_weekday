@@ -1,0 +1,44 @@
+<!-- ex12_list.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CDN방식 [Content Delivery Network]으로 라이브러리를  -->
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+    <h1>List Group</h1>
+        <ul class="list-group">
+            <li class="list-group-item active"><a class="text-white href="http://www.google.com">java</a></li>
+            <li class="list-group-item"><a href="http://www.google.com">javascript</a></li>
+            <li class="list-group-item"><a href="http://www.google.com">jsp</a></li>
+            <li class="list-group-item"><a href="http://www.google.com">Servlet</a></li>
+        </ul>
+        <hr>
+        <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-success">Item1
+                <span class="badge badge-primary">12</span>
+                <!-- 조회수나 댓글 같은거 -->
+            </a>            
+            <a href="#" class="list-group-item list-group-item-danger">Item2
+                <span class="badge badge-danger badge-pill">12</span>
+            </a>
+            <a href="#" class="list-group-item list-group-item-info">Item3</a>
+            <a href="#" class="list-group-item list-group-item-warning">Item5</a>
+        </div>
+    </div>
+</body>
+</html>

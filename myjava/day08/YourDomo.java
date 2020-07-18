@@ -1,0 +1,16 @@
+class YourDomo{
+
+
+	public void a(int i){
+		
+		System.out.println(i);
+	}
+	public String b(int i){
+		return i+"";
+	}
+	static public int c(int i){
+		return i;
+	}
+
+}
+

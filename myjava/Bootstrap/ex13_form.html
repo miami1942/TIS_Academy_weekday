@@ -1,0 +1,71 @@
+<!-- ex13_form.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CDN방식 [Content Delivery Network]으로 라이브러리를  -->
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <!-- [1] Virtical Form (디폴트)
+         [2] Horizontal Form
+         [3] Inline-Form -->
+    <div class="container">
+        <h1>Form</h1>
+        <form action="join.jsp">
+            <div class="form-group col-md-6">
+                <!-- .form-group으로 폼 컨프톹들을 감싸주자. -->
+                <label for="email">Email</label>
+                <input type="text" class="form-control" name="email"
+                id="email" placeholder="Email Address">
+                <!-- .form-group 클래스를 지정 -->
+            </div>
+            <div class="form-group col-md-6">
+                <!-- .form-group으로 폼 컨프톹들을 감싸주자. -->
+                <label for="pwd">Password</label>
+                <input type="password" class="form-control" name="pwd"
+                id="pwd" placeholder="Password">
+                <!-- .form-group 클래스를 지정 -->
+            </div>
+            <div class="form-group form-check col-md-6 pl-5">
+                <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input">이메일 저장
+                </label>
+            </div>
+            <div class="col-md-6 text-center">
+                <button class="btn btn-success btn-block">Login</button>
+            </div>
+        </form>
+            <hr>
+            <h1>Inline Form</h1>
+            <form class="form-inline" action="login.jsp">
+                <label for="email" class="m-3">Email</label>
+                <input type="text" id="email" class="form-control m-3" placeholder="Email">
+                <!-- label의 for와 input의 id가 같아야 한다. -->
+                <label for="pws">Password</label>
+                <input type="text" id="pwd" class="form-control m-3" placeholder="Password">
+
+                <div class="form-check pl-5">
+                    <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input">이메일 저장
+                    </label>
+                </div>
+                <button class="btn btn-"></button>
+            </form>
+     
+
+    </div>    
+</body>
+</html>

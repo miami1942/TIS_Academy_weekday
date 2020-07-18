@@ -1,0 +1,71 @@
+class BreakContinue
+{
+	public static void main(String[] args) 
+	{
+		
+		System.out.println("1.------------------------");
+		for (int i=0;i<3 ;i++ )
+		{
+			if (i==1) break;
+			//break; 가장 가까운 반복문을 벗어난다.
+			System.out.println("i="+i);
+		}
+
+		System.out.println("2.------------------------");
+		for (int i=0;i<3 ;i++ )
+		{
+			if (i==1) continue;
+			/*continue; continue문을 만나면 그 이후의 문장은
+						실행하지 않고 다음 반복을 위해 증감식으로 넘어감
+						즉 반복문을 계속 수행한다.*/
+			System.out.println("i="+i);
+		}
+		/*다음실행 결과를 예측해주세요*/
+		System.out.println("3.------------------------");
+		for (int i=0;i<3 ;i++ )
+		{
+			for (int k=0;k<3 ;k++ )
+			{
+				if(k==1) break;
+				System.out.println("i="+i+", k="+k);
+			}
+		}
+
+		
+		System.out.println("4.------------------------");
+		for (int i=0;i<3 ;i++ )
+		{
+			for (int k=0;k<3 ;k++ )
+			{
+				if(k==1) continue;
+				System.out.println("i="+i+", k="+k);
+			}
+		}
+		
+		System.out.println("5.------------------------");
+		//반복문 앞에 레이블(label)을 지정할 수 있다.
+		outer: //:을 붙여야 라벨!
+		for (int i=0;i<3 ;i++ )
+		{
+			inner:
+			for (int k=0;k<3 ;k++ )
+			{
+				if(k==1) break outer;//레이블지정
+				//지정된 레이블 반복문을 이탈함
+				System.out.println("i="+i+", k="+k);
+			}
+		}
+		
+		System.out.println("6.------------------------");
+		outer: //:을 붙여야 라벨!
+		for (int i=0;i<3 ;i++ ){
+			inner:
+			for (int k=0;k<3 ;k++ ){
+				if(k==1) continue outer;//레이블지정
+				//지정된 레이블 반복문을 계속 수행함
+				System.out.println("i="+i+", k="+k);
+			}
+		}
+
+	}
+}
