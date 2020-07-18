@@ -1,0 +1,27 @@
+class FiveFive
+{
+	public static void main(String[] args) 
+	{
+		int q[][]=new int[5][5];
+		int mo=14;
+		
+
+		for(int i=0; i<q.length; i++) {
+			for(int k=0; k<q[i].length; k++) {
+				if (i==0){
+					q[i][k]=k+1;
+					System.out.print(q[i][k]+"\t");
+				}else if (k==4&&i>0){
+					q[i][k]=i+5;
+					System.out.print(q[i][k]+"\t");
+				}else if (i==q.length-1&&k<=q.length-2){
+					int ld=(q[i].length*3-1);
+					q[i][k]=ld-=1;
+					System.out.print(q[i][k]+"\t");
+				}
+				
+			}
+			System.out.println();
+		}
+	}
+}

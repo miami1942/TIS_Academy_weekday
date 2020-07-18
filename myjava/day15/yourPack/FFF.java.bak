@@ -1,0 +1,15 @@
+package yourPack;
+
+import myPack.*;
+
+public class FFF
+{
+	public static void main(String[] args) 
+	{
+		AAA a=new AAA();//public class: 어디서든 접근가능
+		//BBB b=new BBB();//생략형 class : 같은패키지 내에서만 접근가능.
+		//b.foo();
+		CCC c=new CCC();//public
+		c.sub();
+	}
+}

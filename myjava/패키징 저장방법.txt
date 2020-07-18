@@ -1,0 +1,9 @@
+#패키징 방법
+
+day15>jar cvf 파일명(a.jar) 최상단 패키지명
+
+day15>jar cvf myapp.jar linux windows
+
+#배포하는 방법
+
+1. myapp.jar파일을 jdk/jre/lib/ext 폴더 아래 붙여넣기 한다.

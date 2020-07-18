@@ -1,0 +1,5 @@
+사용자명 sys===>DBA
+비번:as sysdba
+
+system
+Abcd1234

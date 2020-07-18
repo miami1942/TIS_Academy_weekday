@@ -1,0 +1,23 @@
+package windows.java;
+
+import linux.java.*; //<-Parent 파일이 현재 linux에 있기때문에 import를 해주어야 열수 있음.
+
+public class Son2 extends /*linux.java.*/Parent // 이경우에는 1회용으로 쓸경우에
+{
+	public void go(){
+		System.out.println("publicVar="+publicVar);
+		System.out.println("protectedVar="+protectedVar);
+	//	System.out.println("defaultVar="+defaultVar);
+		//System.out.println("privateVar="+privateVar);
+		//set,get 만들고 접근해야 도스에서 출력 가능.
+	}
+	public static void main(String[] args) 
+	{
+		//System.out.println("Hello World!");
+		//go()호출하기
+		Son2 s=new Son2();
+		s.go();
+
+
+	}
+}

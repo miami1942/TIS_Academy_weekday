@@ -1,0 +1,12 @@
+package myPack;
+public class CCC
+{
+	public void sub(){
+		System.out.println("CCC");
+	}
+}//////////////////////////////////////////////////////////////////
+class DDD{
+	piblic void bar(){
+		System.out.println("DDD");
+	}
+}

@@ -1,0 +1,14 @@
+	Component (부품:  Button, List,...)
+	    +-------Container(담아주는 플랫폼 같은 역할)
+		      +---------Window [BorderLayout이 기본]
+				+----Frame
+				+----Dialog -----FileDialog
+		      +---------Panel	[FlowLayout이 기본]
+			       +-----Applet	
+======================================================
+LayoutManager(배치 관리자)
+  ┌1) FlowLayout	(Panel 계열의 디폴트 레이아웃)
+  │2) BorderLayout	(Window 계열의 디폴트 레이아웃)
+  └3) GridLayout
+    4) GridBagLayout
+  ...

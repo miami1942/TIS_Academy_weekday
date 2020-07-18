@@ -1,0 +1,60 @@
+sqlplus
+system
+Abcd1234
+system계정으로 접속후
+#scott계정 만들기~~~~
+create user scott
+identified by tiger:
+===>scott계정이 만들어지면
+scott계정으로 접속해보자.
+conn scott
+tiger
+=>세션 생성권한이 부족하다고 함
+===> dba가 scott에게 권한을 부여해야 하므로
+system 계정으로 다시 접속한다.
+conn system
+Abcd1234
+
+grant create session to scott;
+(세션 생성권한을 scott에게 부여)하면 scott으로 로그인 가능해짐
+
+하지만 세션 생성 권한만으로 데이터를 관리 하지는 못함.
+따라서 아래와 같이 롤 (권한희 집합)을 부여하자
+(다시 system계정으로 접속하여 아래 명령문을 실행하자)
+
+grant connect, resource to scott;
+
+conn scott/tiger
+
+#학생테이블 생성
+create table student(
+no number(4)
+name varchar2(30),
+cname varchar2(50)
+);
+
+=> table created
+#테이블 구조 확인
+desc student;
+
+#학생 데이터 조회
+select name from student;
+
+#학생의 모든 데이터 조회
+select * from student;
+
+#학생 데이터 삽입(insert)
+insert into student(컬럼명1, 컬럼명2,...)
+	  values(컬럼값1, 컬럼값2);
+
+insert into student(no, name, cname)
+	  values(1,'홍길동','자바반');
+
+-------------------------------------------------------------------------------------------
+#이전의 데이터까지 삭제 하는방법
+rollback;
+
+#오타났을 경우 수정 하는 방법
+ed;
+
+#특정부분 선택해서
